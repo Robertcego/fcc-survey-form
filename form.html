@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Gudea&display=swap" rel="stylesheet">
+        <title>FCC | Survey Form</title>
+    </head>
+
+    <body>
+        <div class="title-container">
+            <div class="title">
+                <h1 id="title">Survey Form</h1>
+            </div>
+        </div>
+        <form method="GET" action="https://crossorigin.me/https://freecodecamp.com" id="survey-form">
+            <div class="description">
+                <p id="description">FreeCodeCamp - Survey Form Project</p>
+            </div>
+            <div>
+                <label id="name-label" for="name">Name</label>
+                <br>
+                <input class="input-space" id="name" type="text" name="name" placeholder="Enter your name" required>
+            </div>
+            <div>
+                <label id="email-label" for="email">Email</label>
+                <br>
+                <input class="input-space" id="email" type="email" name="email" placeholder="Enter your email"
+                    pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required>
+            </div>
+            <div>
+                <label id="number-label" for="number">Age</label>
+                <br>
+                <input class="input-space" type="number" id="number" name="age" placeholder="Your age" min="1" max="100"
+                    step="1" required>
+            </div>
+            <div>
+                <label for="dropdown">Select an option:</label>
+                <br>
+                <select id="dropdown">
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                    <option value="3">Option 4</option>
+                </select>
+            </div>
+            <div>
+                <legend>Select your gender:</legend>
+                <input class="radio-field" type="radio" id="male" name="gender" value="male" checked>
+                <label for="male">Male</label>
+                <input class="radio-field" type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input class="radio-field" type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </div>
+            <div>
+                <legend>Select an option:</legend>
+                <input type="checkbox" name="option" id="1" value="option1">
+                <label for="1">1</label>
+                <input type="checkbox" name="option" id="2" value="option2">
+                <label for="2">2</label>
+                <input type="checkbox" name="option" id="3" value="option3">
+                <label for="3">3</label>
+            </div>
+            <div>
+                <legend>Have something to add?</legend>
+                <textarea name="comment" id="comment" cols="32" rows="10">Tell us here...</textarea>
+            </div>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+
+        <script href="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+        <script href="js/script.js"></script>
+    </body>
+
+</html>

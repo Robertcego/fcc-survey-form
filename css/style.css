@@ -1,0 +1,102 @@
+body {
+  font-size: 30px;
+  background-color: white;
+  font-family: "Gudea", sans-serif;
+}
+
+.title.container {
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: -40px;
+  text-decoration: underline;
+}
+
+form {
+  text-align: center;
+  background-color: azure;
+  margin-top: 2%;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  border-radius: 20px;
+  line-height: 50px;
+  border: 5px solid aqua;
+  box-shadow: 1px 2px 3px 4px;
+}
+
+#name-label::before {
+  content: "*";
+  color: red;
+}
+
+#email-label::before {
+  content: "*";
+  color: red;
+}
+
+#number-label::before {
+  content: "*";
+  color: red;
+}
+
+.input-space {
+  height: 30px;
+  width: 300px;
+  border: 2px solid aqua;
+}
+
+#dropdown {
+  height: 40px;
+  width: 300px;
+  border: 2px solid aqua;
+}
+
+textarea {
+  border: 2px solid aqua;
+}
+
+button {
+  height: 75px;
+  width: 200px;
+  font-size: 20px;
+  background-color: azure;
+  border: 2px solid aqua;
+}
+
+button:hover {
+  background-color: aqua;
+  transform: scale(1.1);
+  border: 2px solid antiquewhite;
+}
+
+
+@media screen and (max-width: 833px) {
+  .input-space {
+    width: 80%;
+  }
+
+}
+
+@media screen and (max-width: 520px) {
+  .labels {
+    width: 100%;
+    text-align: left;
+  }
+
+  .input-space {
+    width: 80%;
+    float: left;
+  }
+
+  .input-space {
+    width: 100%;
+  }
+
+  select {
+    width: 100%;
+  }
+}
